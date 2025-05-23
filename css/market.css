@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+  font-size: 4vw;
+}
+
+body {
+  background-color: black;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.mercado {
+  background-image: url(../media/img/uv.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: pink;
+}
+a:hover {
+  color: rgb(91, 220, 68);
+  text-shadow:
+    0 0 4px pink,
+    0 0 11px pink,
+    0 0 19px pink,
+    0 0 40px pink,
+    0 0 80px pink,
+    0 0 90px pink,
+    0 0 100px violet,
+    0 0 150px violet;
+}
+
+.parrafo {
+  text-align: center;
+  color: azure;
+  width: 70%;
+  margin: auto;
+  font-family: 'Quicksand',Verdana, Tahoma, sans-serif;
+}
+
+footer {
+  background-image: url(../media/img/uv.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-family: Jost, Verdana, Tahoma, sans-serif;
+  color: azure;
+  border-radius: 10px;
+  margin: 3%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.item {
+  border: 2px solid greenyellow;
+}
+.footer-ubi {
+
+}
+
+.titulo {
+  background-color: bla;
+}
+.neon-text {
+  color: pink;
+  background-color: black;
+  animation: flicker 1.5s infinite alternate;
+  font-size: 8vw;
+  text-align: center;
+  font-family: Jost, Verdana, Tahoma, sans-serif;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+    0 0 4px pink,
+    0 0 11px pink,
+    0 0 19px pink,
+    0 0 40px pink,
+    0 0 80px pink,
+    0 0 90px pink,
+    0 0 100px violet,
+    0 0 150px violet;
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+
+/* Media Queries*/
+@media only screen and (max-width: 500px) {
+  svg {
+    height: 48px;
+    width: 48px;
+  }
+  footer {
+    flex-direction: column;
+  }
+}

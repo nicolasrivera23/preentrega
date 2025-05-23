@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>After 29 de Abril</title>
+  <link rel="stylesheet" href="../css/29ab.css">
+</head>
+
+<style>
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+  }
+
+  body {
+    border: 2px solid black;
+  }
+  .padre {
+    height: 300px;
+    width: 300px;
+    margin: 100px;
+    border: 2px solid blue;
+    font-family: Verdana, Tahoma, sans-serif;
+  }
+
+  .hijo {
+    border: 2px solid green;
+  }
+
+  /*Pregunta 5*/
+  #preg5 {
+    color: green;
+    background-color: lightgreen;
+  }
+
+</style>
+
+<body>
+  
+  <main>
+    <section>
+      <h3>Pregunta 3</h3>
+
+      <div class="padre">
+        <div class="hijo">
+          div hijo
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <h3>Pregunta 5</h3>
+      <div id="preg5">
+        Hola soy un div de la pregunta 5
+      </div>
+    </section>
+
+    <section>
+      <h3>Formulario</h3>
+      <form action="https://formspree.com/4jdasfdsc/send" method="post">
+        <label for="nombre">Nombre</label> <br>
+        <input type="text" name="nombre" id="nombre">
+        <p>Seleccionar el lenguaje favorito</p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

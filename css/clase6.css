@@ -1,0 +1,65 @@
+.contenedorSt {
+  border: 2px solid black;
+  height: 300px;
+}
+.itemSt1 {
+  border: 2px solid blue;
+}
+.itemSt2 {
+  border: 2px solid green;
+}
+
+.relativo {
+  border: 2px solid red;
+  position: relative;
+  left: 20px;
+}
+
+.fixed {
+  border: 2px solid violet;
+  background-color: royalblue;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.contenedor {
+  border: 2px solid violet;
+  height: 200px;
+  position: relative;
+}
+
+.hijo {
+  border: 2px solid red;
+  position: absolute;
+  top: 130px;
+  left: 5%;
+}
+
+.contenedorSticky {
+  border: 2px solid blue;
+}
+
+.div-sticky {
+  border: 2px solid green;
+  background-color: lightgreen;
+  font-size: 5vw;
+  position: sticky;
+  top:0;
+}
+
+.contenedor-flex {
+  display: flex;
+  border: 2px solid black;
+  height: 150px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.item {
+  border: 2px solid green;
+  height: 50px;
+}

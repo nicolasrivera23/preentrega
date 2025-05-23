@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: Saira, Verdana, Tahoma, sans-serif;
+  height: 100vh;
+}
+
+/* Estilos Menú*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.9s;
+  padding-top: 60px;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+header {
+  color:  white;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 50px;
+  align-items: center;
+}
+
+header h1, h2 {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.clase {
+  border: 1px solid red;
+  padding: 5%;
+  background-image: url("../media/img/2s.jpg");
+  filter: grayscale(100%);
+  font-size: 18px;
+  color: aliceblue;
+  font-family: Montserrat, Verdana, Tahoma, sans-serif;
+}
+
+.clase a {
+  color: aliceblue;
+  background-color: black;
+  border-radius: 12px;
+  padding: 2%;
+}
+
+.titulo {
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.descripcion {
+  animation: backInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+  background-color: black;
+  color: aliceblue;
+  border-radius: 12px;
+  padding: 2%;
+}
+
+/* footer */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000000;
+  color: aliceblue;
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+}
+
+.footer-item {
+  border: 1px black solid;
+  flex-grow: 1;
+  align-content: center;
+}
+
+/* Form */
+.form {
+  border: 1px solid aliceblue;
+  border-radius: 10px;
+  padding: 5%;
+  margin: 5%;
+}
+ .title {
+  margin: 3% 0;
+  font-size: 32px;
+ }
+
+ .submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  width: 50%;
+}
+
+.submit:active {
+  background-color: #06b;
+}
+
+/* Media Queries*/
+
+@media (240px <= width <= 750px) {
+  .form {
+    margin: 0 20%;
+    padding: 0;
+  }
+  .footer-container {
+      flex-direction: column;
+      gap: 1rem;
+  }
+  
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

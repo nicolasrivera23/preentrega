@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Especificidad</title>
+  <link rel="stylesheet" href="../css/especificidad.css">
+  <style>
+    p {
+      color: cadetblue;
+      background-color: burlywood;
+    }
+
+    p {
+      color: gray;
+      background-color: chartreuse;
+    }
+  </style>
+</head>
+<body>
+
+  <header></header>
+
+  <main>
+    <section>
+      <h3>Especificidad, Herencia, Jerarquía</h3>
+      <p>
+        Este es un párrafo
+      </p>
+      <p class="parrafo" id="id_parrafo" style="color: coral; background-color: gray;">
+        Lorem ipsum dolor sit amet.
+      </p>
+
+      <h3>Colores</h3>
+
+      <div>
+        Colores Ejemplo Ejemplini
+      </div>
+
+      <h2>
+        Texto Ejemplo
+      </h2>
+
+      <ul>
+        <li>11</li>
+        <li>22</li>
+        <li>33</li>
+      </ul>
+
+    </section>
+
+    <section>
+      <h2>Unidades de Medida</h2>
+      <hr>
+      <h3>
+        Unidades Absolutas/Fijas
+      </h3>
+      <p class="abso">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, explicabo.</p>
+    </section>
+
+    <section class="contenedor">
+      Lorem ipsum dolor, sit amet consectetur adipisicing
+    </section>
+
+  </main>
+
+  <footer>
+    
+  </footer>
+  
+</body>
+</html>

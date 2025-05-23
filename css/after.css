@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.grid-afters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2,2fr);
+  grid-gap: .5rem;
+  justify-self: center;
+  align-self: center;
+  font-size: 2vw;
+}
+
+.after {
+  border: 1px solid red;
+  padding: 5%;
+  background-image: url("../media/img/hex.jpg");
+  background-position: center;
+  filter: grayscale(100%);
+  color: aliceblue;
+  font-family: Montserrat, Verdana, Tahoma, sans-serif;
+}
+
+.after a {
+  color: aliceblue;
+  background-color: black;
+  border-radius: 12px;
+  padding: 2%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.titulo_principal {
+  background-color: black;
+  color: #C70039;
+  font-family: Sansation, Verdana, Tahoma, sans-serif;
+  font-size: 3vw;
+}
+
+.titulo {
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+  color: black;
+  text-align: center;
+}
+
+.descripcion {
+  animation: backInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+  background-color: black;
+  color: aliceblue;
+  border-radius: 12px;
+  padding: 2%;
+}
+
+
+/* Estilos Menú*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.9s;
+  padding-top: 60px;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+header {
+  color:  azure;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#pagina-actual {
+  text-decoration: underline;
+  cursor: default;
+}
+
+#pagina-actual:hover {
+  text-decoration: none;
+  cursor: default;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
+  .grid-afters {
+    grid-template-columns: 1fr;
+  }
+}

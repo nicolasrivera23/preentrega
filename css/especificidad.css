@@ -1,0 +1,41 @@
+p {
+  color:yellow;
+  background-color: black;
+}
+
+.parrafo {
+  color: black;
+  background-color: yellow;
+}
+
+#id_parrafo {
+  color: violet;
+  background-color: chartreuse;
+}
+
+/* Comentarios */
+
+div {
+  /* color: blue; */
+  /*color: rgb(255, 99, 71, 0.9);*/
+  color: #44ffee;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.abso {
+  font-size: 5vw;
+}
+
+.contenedor {
+  width: 100%; /* Ancho completo del contenedor padre */
+  height: 50vh; /* La mitad de la altura del viewport */
+  border: 1px solid black;
+  border-radius: 10px;
+}

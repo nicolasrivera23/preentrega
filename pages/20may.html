@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>After 20 de Mayo</title>
+  <style>
+
+    body {
+      font-size: clamp(24px, 8vw, 48px);
+    }
+
+    .relative {
+      border: 2px solid blue;
+      background-color: azure;
+      position: relative;
+      left: 20px;
+      top: 30px;
+    }
+    section {
+      background-color: lightblue;
+    }
+    .contenedor-flex {
+      display: flex;
+      height: 100px;
+      width: 100%;
+    }
+    .uno {
+      background-color: lightcoral;
+      flex-grow: 1;
+    }
+    .dos {
+      background-color: lightgreen;
+      flex-grow: 1;
+    }
+    .tres {
+      background-color: lightseagreen;
+      flex-grow: 4;
+    }
+    .cuatro {
+      background-color: lightslategrey;
+      flex-grow: 1;
+    }
+    .cinco {
+      background-color: lightsalmon;
+      flex-grow: 1;
+    }
+    .flex-container-justify {
+      display: flex;
+      border: 2px solid blue;
+      justify-content: space-evenly;
+    }
+    .hijo {
+      border: 2px solid green;
+    }
+    .titulo {
+      font-size: 5vw;
+    }
+  </style>
+</head>
+<body>
+  <header></header>
+
+  <main>
+    <section>
+      <h2>Posicionamiento</h2>
+      <p class="relative">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, autem?
+      </p>
+    </section>
+    <section>
+
+      <h2>FlexBox Grow</h2>
+
+      <div class="contenedor-flex">
+        <div class="uno"></div>
+        <div class="dos"></div>
+        <div class="tres"></div>
+        <div class="cuatro"></div>
+        <div class="cinco"></div>
+      </div>
+
+    </section>
+    <section>
+      <h3>Justify Content</h3>
+      <div class="flex-container-justify">
+        <div class="hijo">Uno</div>
+        <div class="hijo">Dos</div>
+        <div class="hijo">Tres</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+span {
+  color: orange;
+}
+
+div {
+  color: aqua;
+  font-size: 24px;
+}
+
+.estilo_clase {
+  color: coral;
+  font-size: 48px;
+}
+
+#id_div {
+  color: chartreuse;
+  font-size: 24px;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es" style="border: 1px solid blue;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2da Clase</title>
+</head>
+<body style="border: 1px solid red;">
+
+  <header style="border: 1px solid green;">
+     <h1>Segunda Clase</h1>
+    <nav>
+    </nav>
+  </header>
+
+  <main style="border: 1px solid grey;">
+    <section>
+      <h3>Listas Ordenadas y Desordenadas</h3>
+      <h4>Ordenada</h4>
+      <ol>
+        <li>Enero</li>
+        <li>Febrero</li>
+        <li>Marzo</li>
+      </ol>
+      <h4>No ordenada</h4>
+      <ul>
+        <li>Fideos con Pesto</li>
+        <li>Milanesa con puré</li>
+        <li>Asado con Fritas</li>
+      </ul>
+      <h4>Lista de Definición</h4>
+
+      <dl>
+        <dt>HTML</dt>
+        <dd>Lenguaje de marcado utilizado para estructurar contenido en la web.</dd>
+        <dd>No es un lenguaje de programación.</dd>
+        <dt>CSS</dt>
+        <dd>Lenguaje utilizado para aplicar estilos y diseño a las páginas web.</dd>
+        <dt>JavaScript</dt>
+        <dd>Lenguaje de programación utilizado para añadir interactividad a las 
+          páginas web.
+        </dd>
+      </dl>
+
+    </section>
+
+    <section>
+      <h3>Enlaces/Links</h3>
+      <h4>Enlace Externo</h4>
+      <a href="https://www.google.com.ar">Google AR</a>
+      <h4>Enlace Mail</h4>
+      <a href="mailto:info@ejemplo.com">Enviar correo</a>
+      <h4>Descarga</h4>
+      <a href="media/img/imagen.png" download>Descargar imágen</a>
+    </section>
+
+    <section>
+      <h3>Elementos en bloque / en línea</h3>
+      <h4>Bloque / Block</h4>
+      <div style="border: 1px solid red;">Div1</div>
+      <div style="border: 1px solid blue;">Div2</div>
+      <div style="border: 1px solid green;">Div3</div>
+      <h4>En linea</h4>
+      <span style="border: 1px solid green;">Span1</span>
+      <span style="border: 1px solid red;">Span2</span>
+      <span style="border: 1px solid blue;">Span3</span>
+    </section>
+
+    <section>
+      <h2>Multimedia</h2>
+      <h3>Imágenes (etiqueta img)</h3>
+      <img src="../media/img/2s.jpg" width="100%" alt="Super Campeones">
+      <h3>Imágenes (etiqueta picture)</h3>
+        <picture>
+          <source media="(min-width: 960px)" srcset="../media/img/c3.png">
+          <source media="(min-width: 480px)" srcset="../media/img/c2.png">
+          <img src="../media/img/c1.png" style="width: 100%;" alt="Imágen de Charmander">
+        </picture> 
+        <p>
+          Fondo amarillo (ancho de 0 hasta 480px) <br>
+          Fondo rojo (ancho de 480px hasta 960px) <br>
+          Fondo violeta (ancho de 960px y más)
+        </p>
+    </section>
+<!-- ------------------------------------------- -->
+    <section>
+      <h3>Audio</h3>
+      <audio src="../media/audio/xf.mp3" controls>
+        Tu navegador no soporta la reproducción de audio.
+      </audio>
+    </section>
+
+    <section>
+      <h3>Video</h3>
+      <video width="320" height="240" poster="../media/img/vivaldi.jpg" preload="metadata" autoplay controls>
+        <source src="../media/video/vivaldi.mp4" type="video/mp4">
+        <track src="../media/video/subs-es.vtt" srclang="es" label="Español" default>
+        <track src="../media/video/subs-en.vtt" srclang="en" label="English">
+        El navegador no soporta la etiqueta "video".
+      </video>
+    </section>
+
+    <section>
+      <h2>IFrame</h2>
+      <h3>YouTube</h3>
+      <h4>Forma 1</h4>
+      <a href="https://youtu.be/89pPUlJtIGI?si=dw3G4Efcxd0pwlY1&t=33">Video Musical</a>
+      <h4>Forma 2</h4>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/89pPUlJtIGI?si=dw3G4Efcxd0pwlY1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3>Maps</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168881862987!2d-58.38414532335499!3d-34.6037344575007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1744325428268!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section>
+      <h4>Tablas</h4>
+      <!--etiqueta border deprecada, se utiliza CSS para los estilos-->
+      <table border="1">
+        <!-- etiqueta <tr> define una fila / row-->
+        <tr>
+          <!--etiqueta <th> define los encabezados-->
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Ciudad</th>
+        </tr>
+        <tr>
+          <!--etiqueta <td> define los datos de la tabla-->
+          <td>Ana</td>
+          <td>25</td>
+          <td>Madrid</td>
+        </tr>
+        <tr>
+          <td>Juan</td>
+          <td>30</td>
+          <td>Barcelona</td>
+        </tr>
+      </table>
+      <!--etiqueta hr sirve como separador de secciones-->
+      <hr>
+      <table border="1">
+        <tr>
+          <th scope="col" rowspan="2">Nombre</th>
+          <th scope="colgroup" colspan="2">Contacto</th>
+        </tr>
+        <tr>
+          <th scope="col">Teléfono</th>
+          <th scope="col">Email</th>
+        </tr>
+        <tr>
+          <td>Ana</td>
+          <td>123456789</td>
+          <td>ana@ejemplo.com</td>
+        </tr>
+      </table>
+    </section>
+
+  </main>
+
+  <footer style="border: 1px solid yellow;">
+    <strong>nicolas.rivera@bue.edu.ar</strong>
+  </footer>
+  
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!-- DOCTYPE HTML 5 -->
+<!DOCTYPE html>
+<!-- etiqueta inicio html -->
+<html lang="es" style="border: 2px solid blue;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3era Clase</title>
+  <link rel="stylesheet" href="../css/clase3.css">
+</head>
+<body style="border: 2px solid red; margin: 2%;">
+
+  <header style="border: 2px solid green; margin: 2%;">
+    <!-- Acá estamos dentro del header-->
+    <nav>
+      <!-- Acá estamos dentro del nav-->
+    </nav>
+  </header>
+
+  <main style="border: 2px solid grey; margin: 2%;">
+    <!-- Acá estamos dentro del main y dentro se encuentran
+      las distintas secciones (<section>) -->
+    <section>
+      <h2>Formularios HTML</h2>
+      <div class="formulario">
+        <form action="URL_de_destino" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required minlength="3"><br>
+          <input type="email" name="email" id="email" placeholder="Escribe tu email"><br>
+          <input type="password" name="psw" id="psw"><br>
+          <textarea name="mensaje" id="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje"></textarea>
+          <button type="submit">Enviar</button>
+       </form>
+      </div>
+    </section>
+    <section>
+      <h2>FormSpree</h2>
+      <form
+        action="https://formspree.io/f/CLAVE_PERSONAL"
+        method="POST">
+      <label>
+        Your email:
+        <input type="email" name="email">
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+      <!-- your other form fields go here -->
+      <button type="submit">Send</button>
+      </form>
+    </section>
+    <section>
+      <h2>Forms con elementos Extra</h2>
+      <form>
+        <label for="search">Search Buscar</label>
+        <input placeholder="Buscar.." type="search" id="search" name="search" />
+        <br>
+        <label for="paleta">Color</label>
+        <input type="color" name="paleta" id="paleta">
+        <br>
+        <label for="tel">tel</label>
+        <input placeholder="Nro de Tel." type="tel" id="tel" name="tel" />
+        <br>
+        <label for="enlace">URL</label>
+        <input placeholder="URL" type="url" name="enlace" id="enlace">
+        <input type="submit" value="Enviar">
+        <br>
+
+      </form>
+      <br><br>
+      <form action="">
+        <label for="porcentaje">number de 5 en 5</label>
+        <input placeholder="number" type="number" name="porcentaje" id="porcentaje" min="5" max="90" step="5" />
+        <br>
+        <label for="ctvos">number Decimales</label>
+        <input placeholder="decimales" type="number" name="ctvos" id="ctvos" min="0" max="0.99" step="0.01" />
+        <br>
+        <input type="submit" value="Enviar">
+      </form>
+      <br><br>
+      <form action="">
+        <label for="price">Defina un precio máximo: </label><br>
+        <input
+          type="range"
+          name="price"
+          id="price"
+          min="50000"
+          max="500000"
+          step="100"
+          value="250000" /><br>
+        <output class="price-output" for="price"></output>
+      </form>
+      <br><br>
+      <form action="">
+        <label for="datetime">DateTime Fecha y Hora</label>
+        <input type="datetime-local" name="datetime" id="datetime" /><br>
+        <label for="month">Month (Mes)</label>
+        <input placeholder="Mes" type="month" name="month" id="month" /><br>
+        <label for="time">Time / Hora</label>
+        <input type="time" name="time" id="time" /><br>
+        <label for="camp-week">Elija una semana en Mayo o Junio:</label><br>
+        <input type="week" name="week" id="camp-week" min="2025-W18" max="2025-W26" required />
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+      </form>
+
+      <br><br>
+      <form action="">
+        <label for="progressbar">Progress Bar</label>
+        <progress id="progressbar" max="100" value="75">75/100</progress><br>
+        <label for="meterelement">Meter</label>
+        <meter id="meterelement" min="0" max="50" value="44" low="30" high="45" optimum="0">75</meter>
+      </form>
+    </section>
+    <h2>DevTools / Herramientas de Inspección</h2>
+    <p>Las explicaremos y usaremos con CSS</p>
+    <h2>Subida a un Hosting Gratuito</h2>
+    <p>Se desarrollará el tema en el After del <br> Martes 15 de Abril de 19 a 20hs.</p>
+  </main>
+
+  <footer style="border: 2px solid yellow; margin: 2%;">
+    <!-- Acá estamos dentro del footer-->
+    <strong>nicolas.rivera@bue.edu.ar</strong>
+  </footer>
+
+</body>
+<!-- etiqueta fin html -->
+</html>
